@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
+</head>
+
+<body>
+    <div class="container">
+        <!--Intestazione-->
+        <div class="header">
+            <header>
+                <img src="assets/img/logo.svg" alt="logo epicode">
+                <h2>Epicode - Il blog dei developers</h2>
+            </header>
+        </div>
+
+        <!--Navigazione-->
+        <div class="menù">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="job.html">Job</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Contenuti principali-->
+        <main>
+            <h1>Come creare un template per i post</h1>
+            <h3>di Mario Rossi - pubblicato il 25-10-2020</h3>
+
+            <div class="post-content">
+                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+                    applicare a tutte le pagine
+                </p>
+
+                <h2>Le varie aree saranno quindi suddivise in:</h2>
+                <ul>
+                    <li>Contenuti di intestazione del tag <kbd><strong>&lt;header&gt;</strong></kbd></li>
+                    <li>Contenuti centrali variabili del tag <kbd><strong>&lt;main&gt;</strong></kbd></li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag <kbd><strong>&lt;footer&gt;</strong></kbd>
+                    </li>
+                    <li>Formattazione del codice</li>
+                </ul>
+                <h2>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i
+                    CSS. Perciò i passi saranno:</h2>
+                <ul>
+                    <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l'<abbr title="Hyper Text Markup Language">HTML</abbr> dai tag esterni a quelli interni
+                        e dall'alto verso il basso</li>
+                    <li>Applicare gli stili <abbr title="Cascade Style Sheet">CSS</abbr></li>
+                    <li>L'applicazione di stili <abbr title="Cascade Style Sheet">CSS</abbr> è cresciuta negli anni fino
+                        a raggiungere la diffusione pressoché totale.</li>
+                </ul>
+                <table>
+                    <p>Diffusione dei CSS</p>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>% di Utilizzo</th>
+                            <th>Supporto browser</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>20%</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>35%</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>45%</td>
+                            <td>42%</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>80%</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>100%</td>
+                            <td>76%</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div>
+                    <p>Un test di validazione potrà essere fatto tramite il tool online <a
+                            href="https://validator.w3.org/" target="_blank">tool online</a> dedicato allo
+                        scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei
+                        veri developers come loro:</p>
+                </div>
+                <div>
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/_RiQ8Csw0V0"
+                        title="La storia di Alice Vigo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <h3>Vuoi rimanere aggiornato su altre novità del blog?</h3>
+        <form method="POST" action="invio.php.php" autocomplete="on">
+            <fieldset>
+                <legend>Iscriviti alla nostra newsletter:</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="inserire email...">
+                <input type="submit" name="submit" id="submit" value="Isctiviti">
+            </fieldset>
+            <hr>
+            <!--Contenuti secondari-->
+            <aside>
+                <h2>Articoli correlati</h2>
+                <div>
+                    <h3><a href="articolo.html">Validare il codice <kbd><strong>HTML</strong></kbd></a></h3>
+                    <p>Categoria: develop</p>
+                    <p>Data: 18-9-2020</p>
+
+                    <h3><a href="articolo.html">Correggere la sintassi</a></h3>
+                    <p>Categoria: develop</p>
+                    <p>Data: 16-9-2020</p>
+
+                    <h3><a href="articolo.html">Meno Kb nella pagina <kbd><strong>HTML</strong></kbd></a></h3>
+                    <p>Categoria: ottimizzazione</p>
+                    <p>Data: 30-9-2020</p>
+                </div>
+
+            </aside>
+            <hr>
+            <!--Piè di pagina-->
+            <footer>
+                <p>Blog Epicode&#169;2021</p>
+
+                <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+                    00112233. <a href="mailto:info@epicode.school">info@epicode.school</a></p>
+            </footer>
+    </div>
+</body>
+
+</html>
